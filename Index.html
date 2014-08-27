@@ -3,17 +3,28 @@
         <meta charset="utf-8">
         <script>
         
-            var password = prompt("Lösen: ");
+            var age = parseInt(prompt("Ålder: ")), film;
+            var gender = prompt("Kön: ");
             
-            if(password == "ada"){
-               alert("Korrekt lösen!"); 
-            } else { 
-                alert("Fel lösen!");
+            if(age < 8){
+                if(gender == "man"){
+                    film = "Pettsson";
+                }else{
+                    film = "My little pony";
+                }
+            }else if(age < 15){
+                film = "Frost";
+            }else if(age < 25){
+                film = "Die hard";
+            }else if(age < 30){
+                film = "Pokemon";
+            }else{
+                film = "Starwars";
             }
-            
+        alert("Rekommenderad film" + film);
         </script>
     </head>
     <body>
-    
+
     </body>
 </html>
